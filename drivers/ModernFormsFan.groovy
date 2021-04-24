@@ -126,7 +126,7 @@ def setSpeed(speed) {
 /*
  *    Set the light's brightness
  */
-def setLevel(level) {
+def setLevel(level, duration=null) {
     if (logEnable) log.debug "Sending Light Level " + level
     sendCommand("lightBrightness", level)
 }
